@@ -12,9 +12,21 @@ body {
   border: 1px solid black;
   margin-top: 80px;
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
 }
-.card {
-  background-color: aquamarine;
-  width: 200px;
-  height: 200px;
+
+.overflow {
+  width: 199px;
+  height: 199px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+}
+
+.card:hover .overflow {
+  transform: translate(-100%, -100%);
+  transition: all 1s;
 }
