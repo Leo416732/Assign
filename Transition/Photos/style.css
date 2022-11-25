@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  margin-top: 80px;
+  display: flex;
+}
+.card {
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+}
