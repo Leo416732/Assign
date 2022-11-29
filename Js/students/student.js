@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        let studentName1 = "Бат";
+let studentName1 = "Бат";
 let studentName2 = "Онц Дүмд";
 let studentName3 = "Тулга ";
 let studentName4 = "Номин";
@@ -23,8 +13,3 @@ console.log(studentName4 + "-" + Onoo4 + "- Mash sain" + "  Tentssen")
 console.log(studentName3 + "-" + Onoo3 + "- Sain" + "  Tentssen")
 console.log(studentName1 + "-" + Onoo1 + "- Hangalttai" + "  Tentssen")
 console.log(studentName2 + "-" + Onoo2 + "- Mash muu" + "  Tentseegvi")
-
-
-    </script>
-</body>
-</html>
