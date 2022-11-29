@@ -18,8 +18,8 @@ body {
 }
 
 .overflow {
-  width: 199px;
-  height: 199px;
+  width: 200px;
+  height: 200px;
   background-color: black;
   opacity: 0.5;
   position: absolute;
