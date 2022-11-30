@@ -12,11 +12,11 @@ if (month < 10 && day < 10) {
   console.log(yearstr.concat("-", month, "-", day));
 }
 
-let phoneNumber = 1306530;
+let phoneNumber = 8306530;
 let phoneNstr = phoneNumber.toString();
 let phoneN = phoneNstr.substring(0, 2);
 if (phoneN == 83 || phoneN == 93 || phoneN == 97 || phoneN == 98) {
-  console.log(" G-mobile");
+  console.log("G-mobile");
 } else if (phoneN == 80 || phoneN == 86 || phoneN == 88 || phoneN == 89) {
   console.log("Unitel");
 } else if (phoneN == 99 || phoneN == 94 || phoneN == 95) {
