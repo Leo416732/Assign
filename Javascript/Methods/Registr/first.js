@@ -34,7 +34,7 @@ const alphabet = [
   "Ю",
   "Я",
 ];
-let register = prompt("Registriin dugaara oruulna uu").toUpperCase();
+let register = prompt("Registriin dugaara oruulna uu");
 
 function isCorrectReg(reg) {
   if (
@@ -45,7 +45,7 @@ function isCorrectReg(reg) {
   ) {
     getRegisterInfo(reg);
   } else {
-    alert("RD Buruu baino");
+    console.log("RD Buruu baino");
   }
 }
 isCorrectReg(register);
