@@ -34,7 +34,7 @@ const alphabet = [
   "Ю",
   "Я",
 ];
-let register = prompt("Registriin dugaara oruulna uu");
+let register = prompt("Registriin dugaara oruulna uu").toUpperCase();
 
 function isCorrectReg(reg) {
   if (
@@ -45,7 +45,7 @@ function isCorrectReg(reg) {
   ) {
     getRegisterInfo(reg);
   } else {
-    console.log("RD Buruu baino");
+    alert("RD Buruu baino");
   }
 }
 isCorrectReg(register);
@@ -64,7 +64,7 @@ getGender(register);
 function getBirthDay(reg) {
   if (
     Number.isInteger(Number(register[7].slice())) == true &&
-    Number.isInteger(Number(register[6].slice())) == true
+    Number.isInteger(Number(register[6].slice())) == true 
   ) {
     return register[6], register[7];
   } else {
