@@ -16,7 +16,7 @@ let students = [
   },
   {
     name: "Тэмүүлэн",
-    age: 24,
+    age: 23,
     gender: "male",
   },
   {
@@ -25,19 +25,48 @@ let students = [
     gender: "female",
   },
 ];
-function male(list) {
+//nasnii dundaj
+function AvgAge(list) {
   let count = 0;
-  for (i = 0; i < list.length; i++) {
-    count += students[i].gender;
-    let j = 0;
-    let g = 0;
-    if (count == "male") {
-      let gh = i++;
-      console.log(gh);
-    } else {
-      g++;
-      console.log(g);
+  for(i = 0 ;i < list.length ; i++){
+    count += list[i].age;
+  }
+  console.log(Math.round(count/list.length));
+}
+AvgAge(students)
+
+//owog nemeh
+let std = students;
+std[0].Owog = "Gonchig";
+std[1].Owog = "Sumlai";
+std[2].Owog = "Dorj";
+std[3].Owog = "Goo";
+std[4].Owog = "Nergvi";
+console.log(students);
+
+//ijil nastai
+function equalAge(list){
+  for(i = 1;i < list.length ; i++){
+    for(j = 0; j < list.length;j++){
+      if(list[j].age === list[i].age && i > j){
+        console.log(list[i].name, list[j].name,"\t","nariin nas ni adilhan:",list[i].age)
+      }
     }
   }
 }
-male(students);
+equalAge(students);
+
+//gender number
+function GetGender(gen){
+  let count = 0;
+  let count2 = 0;
+  for(i = 0 ;i < gen.length ; i++){
+    if(gen[i].gender == "male"){
+      count++;
+    }else{
+      count2++;
+    }
+  }
+  console.log(" eregtei suragchiin too: ",count,"\n","emegtei suragchiin too: ",count2)
+}
+GetGender(students);
